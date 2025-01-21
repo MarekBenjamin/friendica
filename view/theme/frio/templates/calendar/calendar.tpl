@@ -57,5 +57,9 @@
 	</div>
 
 	{{* This is the container where the fullCalendar is inserted through js *}}
-	<div id="events-calendar"></div>
+	<script src="https://events.mbbit.de/gancio-events.es.js"></script>
+	<gancio-events baseurl="https://events.mbbit.de" sidebar="true" theme="light"></gancio-events>
+
+
+
 </div>
