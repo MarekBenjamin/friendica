@@ -19,6 +19,11 @@ body {
 	color: $font_color;
 	font-family: "Open Sans", sans-serif;
 }
+
+.filer {
+	background-color: $background_color;
+}
+
 body.minimal {
 	padding: 15px;
 }
