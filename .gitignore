@@ -73,9 +73,6 @@ venv/
 
 #ignore addons directory
 /addon
-# except those:
-!/addons/.gitkeep
-!/addon/.gitkeep
 
 #ignore base .htaccess
 /.htaccess
