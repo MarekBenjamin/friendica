@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2025.02-dev\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-03 19:55+0000\n"
+"POT-Creation-Date: 2025-02-03 23:39+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1243,8 +1243,8 @@ msgstr ""
 msgid "Tag term:"
 msgstr ""
 
-#: src/Content/Conversation.php:329 src/Module/Filer/SaveTag.php:59
-msgid "Save to Folder:"
+#: src/Content/Conversation.php:329
+msgid "Save to Folder"
 msgstr ""
 
 #: src/Content/Conversation.php:330
@@ -7022,6 +7022,10 @@ msgstr ""
 
 #: src/Module/Filer/RemoveTag.php:101
 msgid "Item was not removed"
+msgstr ""
+
+#: src/Module/Filer/SaveTag.php:59
+msgid "Folder:"
 msgstr ""
 
 #: src/Module/Filer/SaveTag.php:59
