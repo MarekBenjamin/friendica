@@ -303,6 +303,10 @@
 				.find('#modal-body')
 				.append(data);
 
+			modal
+				.find('#modal-header h4')
+				.append("{{$fileas}}");
+
 			// Ensure focus after the modal is fully visible
 			modal.on('shown.bs.modal', function () {
 				$('#id_term').trigger('focus');
