@@ -7,5 +7,5 @@
 
 {{include file="field_combobox.tpl"}}
 <div class="settings-submit-wrapper filer">
-	<input id="filer_save" type="button" class="settings-submit btn" value="{{$submit}}" />
+	<input id="filer_save" type="button" class="btn btn-primary" value="{{$submit}}" />
 </div>
