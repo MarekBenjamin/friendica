@@ -302,12 +302,12 @@
 			modal
 				.find('#modal-body')
 				.append(data);
-			
+
 			// Ensure focus after the modal is fully visible
-       		modal.on('shown.bs.modal', function () {
-            	$('#id_term').trigger('focus');
-        	});
-			
+			modal.on('shown.bs.modal', function () {
+				$('#id_term').trigger('focus');
+			});
+
 			$("#filer_save").click(function (e) {
 				e.preventDefault();
 				const term = $("#id_term").val();
@@ -316,7 +316,7 @@
 					formModified = true;
 					$('body').css('cursor', 'wait');
 					$.get('filer/' + id + '?term=' + term)
-						.done(function () {							
+						.done(function () {
 							$('#modal-body').empty();
 							$('#modal').modal('hide');
 							resetFormModifiedFlag();
