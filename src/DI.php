@@ -8,6 +8,7 @@
 namespace Friendica;
 
 use Dice\Dice;
+use Friendica\Core\Addon\AddonHelper;
 use Friendica\Core\Logger\Capability\ICheckLoggerSettings;
 use Friendica\Core\Logger\LoggerManager;
 use Friendica\Core\Logger\Util\LoggerSettingsCheck;
@@ -278,6 +279,11 @@ abstract class DI
 	public static function storageManager()
 	{
 		return self::$dice->create(Core\Storage\Repository\StorageManager::class);
+	}
+
+	public static function addonHelper(): AddonHelper
+	{
+		return self::$dice->create(AddonHelper::class);
 	}
 
 	/**
@@ -788,5 +794,14 @@ abstract class DI
 	public static function postMediaRepository(): Content\Post\Repository\PostMedia
 	{
 		return self::$dice->create(Content\Post\Repository\PostMedia::class);
+	}
+
+	/**
+	 * @internal The EventDispatcher should never called outside of the core, like in addons or themes
+	 * @deprecated 2025.02 Use constructor injection instead
+	 */
+	public static function eventDispatcher(): \Psr\EventDispatcher\EventDispatcherInterface
+	{
+		return self::$dice->create(\Psr\EventDispatcher\EventDispatcherInterface::class);
 	}
 }
